@@ -8,10 +8,10 @@ export default defineConfig({
   base: '/', 
   plugins: [react()],
   
-  //2. sever의 proxy 설정
+  //2. server의 proxy 설정
   // 리엑트 5172 port -> 스프링 8088 port
   // port 가 다르면 cross-origin 으로 간주하고 차단!
-  sever :{
+  server :{
     proxy:{
       '/api' : 'http://43.203.217.225:8088'
     }
