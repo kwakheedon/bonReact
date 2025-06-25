@@ -12,7 +12,7 @@ const GoodsDetail = () => {
   console.log("상품 id:", id);
 
   const getGood = async () => {
-    let res = await axios.get(`http://localhost:8088/lunch/api/goods_list/${id}`);
+    let res = await axios.get(`http://43.203.217.225:8088/lunch/api/goods_list/${id}`);
     let data = res.data;
 
     console.log(data);

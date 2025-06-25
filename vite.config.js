@@ -13,7 +13,7 @@ export default defineConfig({
   // port 가 다르면 cross-origin 으로 간주하고 차단!
   sever :{
     proxy:{
-      '/api' : 'http://localhost:8088'
+      '/api' : 'http://43.203.217.225:8088'
     }
   }
 })
