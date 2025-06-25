@@ -6,10 +6,10 @@ const GoodsItem = ({item}) => {
     <div className="goods-item" style={{ position: "relative" }}>
       <div className="goods-item-icon">
         {/*best 상품인지 new 상품인지*/}
-        {item.isBest ?(<em className="goods-best">new</em>):
-         item.isNew ?(<em className="goods-new">best</em>):("")}
+        {item.isNew == 1 ? (<em className="goods-new">new</em>) :
+          item.isBest == 1 ? (<em className="goods-best">best</em>) : ("")}
 
-     
+
       </div>
       <div className="goods-thumb">
         {/* 이미지 클릭 시, 상세페이지 */}
